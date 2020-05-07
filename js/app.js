@@ -86,8 +86,12 @@ class Expense {
   </div>
 
  </div>`;
+
     const expensesList = document.querySelector("#expense-list");
     expensesList.appendChild(singleExpense);
+    inputs.expenseAmountInput.value = "";
+    inputs.expenseTitleInput.value = "";
+
     singleExpense
       .querySelector("a.delete-icon")
       .addEventListener("click", function () {
